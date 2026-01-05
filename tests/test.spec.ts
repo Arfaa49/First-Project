@@ -21,7 +21,7 @@ test('has title', async ({ page }) => {
   await page.getByText('Impressive').click()
   await page.getByText('Web Tables').click()
   await page.getByRole('button', { name: 'Add' }).click()
-  await page.getByRole('textbox', { name: 'First Name' }).fill('arfa')
+  await page.getByRole('textbox', { name: 'First Name' }).fill('arfaa')
   await expect(page.getByRole('textbox', { name: 'First Name' })).not.toBeEmpty()
   await page.getByRole('textbox', { name: 'Last Name' }).fill('Saleem')
   await page.getByRole('textbox', { name: 'name@example.com' }).fill('arfa@example.com')
